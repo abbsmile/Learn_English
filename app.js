@@ -30,6 +30,11 @@ App({
 
   globalData:{
     userInfo:null
+  },
+
+
+  onLoad: function( option ) {
+    
   }
   
 })
