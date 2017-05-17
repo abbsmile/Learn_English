@@ -1,1 +1,7 @@
 /* purchase_ncee.wxss */
+
+.purchase_ncee_information_view {
+  margin-top: 20px
+}
+
+

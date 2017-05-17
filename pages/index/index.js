@@ -32,7 +32,9 @@ Page({
       // 这个路径暂时还不是太清楚，id 是什么鬼？
       path: '/page/user?id=456'
     }
-  }
+  },
+
+
 
 
   // 上面的头像就是通过这个头像加载的
@@ -49,7 +51,39 @@ Page({
   //       // userInfo:'什么鬼'
   //     })
   //   })
-    
   // }
+
+  onLoad: function () {
+    var that = this
+
+    app.getUserInfo(function (userInfo) {
+      
+      that.setData({
+        userInfo: userInfo
+      })
+
+      wx.request({
+        url: 'https://english.yj777.cn/public/index.php/index/index/course',
+        header: {
+          'content-type': 'application/json'
+        },
+        success: function (res) {
+          console.log("返回数据为：" + res.data.course[0].name);
+          console.log('submit success');
+        },
+        fail: function () {
+          console.log('submit fail');
+        },
+        complete: function () {
+          console.log('submit comlete');
+        }
+      })
+      
+    })
+  }
+
+
+
+
   
 })

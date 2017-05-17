@@ -1,3 +1,26 @@
 <!--purchase_ncee.wxml-->
 
-<text>请输入您的个人信息：</text>
+
+<view class="purchase_ncee_information_view">
+  <text>请输入您的个人信息：</text>
+</view>
+
+
+<view id="adduser">  
+    <form bindsubmit="formSubmit" > 
+
+         <view class="section">  
+            <view class="section__title">姓名:</view>  
+            <view class='form-group'>  
+                <input type="text" class="input-text" name="username" placeholder="请输入姓名" />  
+            </view>      
+        </view>
+
+        <view class="section btn-area">  
+            <button formType="submit">提交</button>  
+            <!--<button formType="reset">清空</button>  -->
+        </view>  
+    </form>  
+  
+</view>    
+
