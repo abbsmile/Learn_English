@@ -1,0 +1,6 @@
+/* toefl.wxss */
+
+.toefl_introduce {
+    margin-top: 20px;
+    color: #6F00D2;
+}

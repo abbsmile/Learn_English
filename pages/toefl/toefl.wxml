@@ -1,0 +1,9 @@
+<!--toefl.wxml-->
+
+<view class="contain_toefl">
+
+  <view class="toefl_introduce">
+    <text class="toefl_introduce">{{introduce}}</text>
+  </view>
+
+</view> 

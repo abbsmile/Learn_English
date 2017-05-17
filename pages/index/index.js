@@ -7,8 +7,8 @@ Page({
 
   data: {
     // userInfo: {}
-    motto: '托福冲刺 只给最爱的自己',  
-    motto2: '高考英语 愿你我把握机会',
+    toefl_motto: '托福英语 只给最爱的自己',  
+    ncee_motto: '高考冲刺 愿你我把握机会',
     imageUrl_toefl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494996406291&di=354e8d58df44d5b90dad47b4708c73ce&imgtype=0&src=http%3A%2F%2Fwww.hbpx.net%2Fuploadimg%2F20131024%2F20131024110141_1094.jpg"
 
   },

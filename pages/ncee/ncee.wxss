@@ -3,5 +3,12 @@
 
 .ncee_introduce {
   margin-top: 20px;
+  color: #6F00D2;
+}
+
+.ncee_purchase_introduce {
+  margin-left: 60px;
+  /* 这句没有用，可以查一下什么情况 */
+  margin-top: 2000px;
   color: #EA0000;
 }

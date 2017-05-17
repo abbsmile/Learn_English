@@ -18,13 +18,13 @@
   color: #EA0000;
 }*/
 
-.usermotto {
-  margin-top: 20px;
+.main_ncee {
+  margin-top: 5px;
   color: #EA0000;
 }
 
-.usermotto2 {
-  margin-top: 20px;
+.main_toefl {
+  margin-top: 5px;
   color: #EA0000;
 }
 

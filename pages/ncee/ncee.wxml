@@ -1,11 +1,34 @@
 <!--ncee.wxml-->
-<text>ncee.wxml</text>
 
 
-<view class="contain_ncee">
+<!-- 1、展示一下介绍-->
+<view class="ncee_title_intrdece_view">
+    <text class="ncee_title_introduce">{{introduce}}</text>
+</view>  
 
-  <view class="ncee_introduce">
-    <text class="ncee_introduce">{{introduce}}</text>
-  </view>
+<!-- 1.1 介绍的图片-->
+  <image class="ncee_image_introduce" src="{{ncee_image_introduce}}" mode="scaleToFill">
+  </image>
 
-</view>   
+<!-- 1.2 介绍的内容-->
+<view class="ncee_cotent_introduce_view">
+    <text class="ncee_content_introduce">{{content}}</text>
+</view> 
+
+
+
+<!-- 2、购买该课程 -->
+<text class="ncee_purchase_introduce"> 你想购买该课程么？</text>
+<view class="ncee_purchase_view">
+    <navigator url="../purchase_ncee/purchase_ncee">购买</navigator>
+</view>
+
+
+
+<view class="test_title">{{name_test}}</view>
+
+
+
+
+
+
