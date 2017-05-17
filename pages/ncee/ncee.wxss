@@ -1,0 +1,7 @@
+/* ncee.wxss */
+
+
+.ncee_introduce {
+  margin-top: 20px;
+  color: #EA0000;
+}

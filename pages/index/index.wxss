@@ -1,0 +1,32 @@
+/**index.wxss**/
+
+/*.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+ /*avator: 化身
+.userinfo-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #EA0000;
+}*/
+
+.usermotto {
+  margin-top: 20px;
+  color: #EA0000;
+}
+
+.usermotto2 {
+  margin-top: 20px;
+  color: #EA0000;
+}
+
+
+

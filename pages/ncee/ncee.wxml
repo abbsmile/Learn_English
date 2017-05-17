@@ -1,0 +1,11 @@
+<!--ncee.wxml-->
+<text>ncee.wxml</text>
+
+
+<view class="contain_ncee">
+
+  <view class="ncee_introduce">
+    <text class="ncee_introduce">{{introduce}}</text>
+  </view>
+
+</view>   

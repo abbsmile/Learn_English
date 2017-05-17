@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "Setting/register/register",
+    "pages/ncee/ncee",
+    "pages/ncee/ncee"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFF00",
+    "navigationBarTitleText": "上海甬洁科技",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "Setting/register/register",
+        "text": "设置"
+      }
+    ],
+    "backgroundColor": "#E0E0E0",
+    "selectedColor": "#EA0000",
+    "borderStyle": "white"
+  },
+  "debug": true,
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
