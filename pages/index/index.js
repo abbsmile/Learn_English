@@ -7,10 +7,9 @@ Page({
 
   data: {
     // userInfo: {}
-    toefl_motto: '托福英语 只给最爱的自己',  
-    ncee_motto: '高考冲刺 愿你我把握机会',
+	ncee_motto: '高考 愿你我把握机会',
+    toefl_motto: '托福 只给最爱的自己',  
     imageUrl_toefl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494996406291&di=354e8d58df44d5b90dad47b4708c73ce&imgtype=0&src=http%3A%2F%2Fwww.hbpx.net%2Fuploadimg%2F20131024%2F20131024110141_1094.jpg"
-
   },
 
   //事件处理函数
@@ -19,7 +18,6 @@ Page({
       url: '../logs/logs'
     })
   },
-
 
   /**
    * 用户点击右上角分享
@@ -33,8 +31,6 @@ Page({
       path: '/page/user?id=456'
     }
   },
-
-
 
 
   // 上面的头像就是通过这个头像加载的
@@ -52,6 +48,7 @@ Page({
   //     })
   //   })
   // }
+    
 
   onLoad: function () {
     var that = this
@@ -60,23 +57,7 @@ Page({
       
       that.setData({
         userInfo: userInfo
-      })
 
-      wx.request({
-        url: 'https://english.yj777.cn/public/index.php/index/index/course',
-        header: {
-          'content-type': 'application/json'
-        },
-        success: function (res) {
-          console.log("返回数据为：" + res.data.course[0].name);
-          console.log('submit success');
-        },
-        fail: function () {
-          console.log('submit fail');
-        },
-        complete: function () {
-          console.log('submit comlete');
-        }
       })
       
     })

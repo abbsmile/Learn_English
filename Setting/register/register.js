@@ -1,7 +1,7 @@
 //  register.js
 
-
 var app = getApp()
+
 
 Page({
 
@@ -9,26 +9,13 @@ Page({
     userInfo: {}
   },
 
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-
-
   // 上面的头像就是通过这个头像加载的
   onLoad: function () {
 
-    console.log('onLoad')
     var that = this
-
-    //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
-      //更新数据
       that.setData({
         userInfo:userInfo
-        // userInfo:'什么鬼'
       })
     })
 

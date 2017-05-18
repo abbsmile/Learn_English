@@ -9,28 +9,27 @@ Page({
     ncee_image_introduce: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495007777755&di=7c352686ac1f50e976b3c12996b94900&imgtype=0&src=http%3A%2F%2Fimg.kuaiji.com%2F2016%2F0601%2F1464759405945.jpg",
     description: '',
     price: '',
-    teacher_id: ''
+    teacher_id: '',
+	course_id: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
       var that = this
-
       wx.request({
         url: 'https://english.yj777.cn/public/index.php/index/index/course',
         header: {
           'content-type': 'application/json'
         },
-
         success: function (res) {
            that.setData({
              name: res.data.course[0].name,
              description: res.data.course[0].description,
              price: res.data.course[0].price,
-             teacher_id: res.data.course[0].teacher_id
+             teacher_id: res.data.course[0].teacher_id,
+						 course_id: res.data.course[0].course_id
            })
            console.log('submit success');
         },
@@ -43,14 +42,12 @@ Page({
       })
     },
 
-
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
-  },
+	
+  }，
 
   /**
    * 生命周期函数--监听页面显示

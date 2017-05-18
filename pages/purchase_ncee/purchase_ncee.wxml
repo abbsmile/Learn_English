@@ -8,19 +8,71 @@
 
 <view id="adduser">  
     <form bindsubmit="formSubmit" > 
-
-         <view class="section">  
-            <view class="section__title">姓名:</view>  
-            <view class='form-group'>  
+				<!-- 我们从界面上输入的数据： -->
+        <view class="section"> 
+            <view class="section__title">姓名:  
+            <!--<view class='form-group'>  -->
                 <input type="text" class="input-text" name="username" placeholder="请输入姓名" />  
-            </view>      
+            <!--</view> -->
+						</view>
+
+						<view class="section__mobile">电话号码:</view>  
+            <view class='form-group'>  
+                <input type="text" class="input-text" name="mobile" placeholder="请输入电话号码" />  
+            </view> 
+
+						<view class="section__email">个人邮箱:</view>  
+            <view class='form-group'>  
+                <input type="text" class="input-text" name="email" placeholder="请输入邮箱地址" />  
+            </view> 
+
+						<view class="section__identity_no">身份证号:</view>  
+            <view class='form-group'>  
+                <input type="text" class="input-text" name="identity_no" placeholder="请输入姓名" />  
+            </view>  
         </view>
 
+
+				<!-- 我们从微信上获取的数据：-->
+				<view class="user_get_from_wechat">
+						<view class="user_information">
+							<text>呢称：</text>
+							<text >{{userInfo.nickName}}</text>
+						</view>
+
+						<!--<view class="user_information">
+							<text>avatarUrl:</text>
+							<text>{{userInfo.avatarUrl}}</text>
+						</view>-->
+
+						<view class="user_information">
+							<text>省份：</text>
+							<text>{{userInfo.province}}</text>
+						</view>
+
+						<view class="user_information">
+							<text>城市：</text>
+							<text>{{userInfo.city}}</text>
+						</view>
+
+						<view class="user_information">
+							<text>国家：</text>
+							<text>{{userInfo.country}}</text>
+						</view>
+
+						<view class="user-information-gender">
+								<text>性别：</text>
+
+								<view wx:if="{{userInfo.gender}}"> 男 </view>
+								<view wx:else> 女 </view>
+						</view>
+				</view>
+
+				<!-- 提交按钮 -->
         <view class="section btn-area">  
             <button formType="submit">提交</button>  
             <!--<button formType="reset">清空</button>  -->
         </view>  
     </form>  
-  
 </view>    
 

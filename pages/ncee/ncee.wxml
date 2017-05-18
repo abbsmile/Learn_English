@@ -21,7 +21,7 @@
     <text class="ncee_price_introduce">课程价格： </text>
     <text class="ncee_price_introduce">{{price}}</text>
   </span>
-</view> 
+</view>
 
 <!-- 1.4 教师id-->
 <view class="ncee_teacherid_introduce_view">
@@ -31,8 +31,15 @@
   </span>
 </view>
 
+<!-- 1.5 课程id -->
+<view class="ncee_teacherid_introduce_view">
+  <span>
+    <text class="ncee_price_introduce">课程的id： </text>
+    <text class="ncee_teacher_introduce">{{course_id}}</text>
+  </span>
+</view>
 
- <!--2、购买该课程 -->
+<!--2、购买该课程 -->
 <text class="ncee_purchase_introduce"> 你想购买该课程么？</text>
 <view class="ncee_purchase_view">
     <navigator url="../purchase_ncee/purchase_ncee">购买</navigator>

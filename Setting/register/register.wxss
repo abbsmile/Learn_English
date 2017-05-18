@@ -1,19 +1,23 @@
 
-
+/* 1.总体的一个居中上下显示 */
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* 1.1 然后是头像 */
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
   margin: 40rpx;
   border-radius: 50%;
 }
-
+/* 1.2 然后是呢称 */
 .userinfo-nickname {
   color: #EA0000;
 }
 
+.user-information-gender {
+	flex-direction: column
+}
