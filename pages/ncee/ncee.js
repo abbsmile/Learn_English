@@ -21,7 +21,7 @@ Page({
       wx.request({
         url: 'https://english.yj777.cn/public/index.php/index/index/course',
         header: {
-          'content-type': 'application/json'
+         'content-type': 'application/json'
         },
         success: function (res) {
            that.setData({
@@ -29,7 +29,7 @@ Page({
              description: res.data.course[0].description,
              price: res.data.course[0].price,
              teacher_id: res.data.course[0].teacher_id,
-						 course_id: res.data.course[0].course_id
+			 course_id: res.data.course[0].course_id
            })
            console.log('submit success');
         },
@@ -47,7 +47,7 @@ Page({
    */
   onReady: function () {
 	
-  }，
+  },
 
   /**
    * 生命周期函数--监听页面显示

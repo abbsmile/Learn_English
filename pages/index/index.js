@@ -28,7 +28,7 @@ Page({
       desc: '最具科技感小程序 高效 简洁 实用 ！',
 
       // 这个路径暂时还不是太清楚，id 是什么鬼？
-      path: '/page/user?id=456'
+      path: '/page/user'
     }
   },
 

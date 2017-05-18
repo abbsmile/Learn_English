@@ -66,6 +66,11 @@
 								<view wx:if="{{userInfo.gender}}"> 男 </view>
 								<view wx:else> 女 </view>
 						</view>
+
+						<view class="user_information">
+							<text>课程id：</text>
+							<text>{{course_id}}</text>
+						</view>
 				</view>
 
 				<!-- 提交按钮 -->

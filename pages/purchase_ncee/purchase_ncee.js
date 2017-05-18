@@ -3,11 +3,16 @@ var app = getApp();
 Page({
   
   data: {
-		userInfo: {}
+		userInfo: {},
+		course_id: ''
   },
 
 
-	onLoad: function () {
+	onLoad: function (options) {
+
+		this.setData({
+			course_id: options.course_id
+		})
 
 		var that = this
 		app.getUserInfo(function (userInfo) {
@@ -21,7 +26,11 @@ Page({
 
 
   formSubmit: function (e) {
-		
+
+	console.log("######################")
+	console.log(this.data.course_id)
+	console.log("######################")
+
     wx.request({
       url: 'https://english.yj777.cn/public/index.php/index/index/student ',
       
@@ -41,23 +50,21 @@ Page({
 				city: this.data.userInfo.city,
 				country: this.data.userInfo.country,
 				gender: this.data.userInfo.gender,
+				course_id: this.data.course_id
 			},
 
-			fail: function () {
-				wx.showToast({
-					title: '提交失败!'
-				})
-			},
-
-
+			
       success: function (res) {
-        wx.showToast({
-					title: '提交成功！'
-				}),
-				console.log("################"),
-        console.log(res),
-				console.log("################")
+        	wx.showToast({
+				title: '提交成功！'
+			})
       },
+
+	  fail: function () {
+		  wx.showToast({
+			  title: '提交失败!'
+		  })
+	  },
 
     })
   }

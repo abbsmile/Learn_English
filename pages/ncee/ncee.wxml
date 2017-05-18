@@ -1,6 +1,5 @@
 <!--ncee.wxml-->
 
-
 <!-- 1、展示一下介绍-->
 <view class="ncee_title_intrdece_view">
     <text class="ncee_title_introduce">{{name}}</text>
@@ -42,7 +41,7 @@
 <!--2、购买该课程 -->
 <text class="ncee_purchase_introduce"> 你想购买该课程么？</text>
 <view class="ncee_purchase_view">
-    <navigator url="../purchase_ncee/purchase_ncee">购买</navigator>
+    <navigator url="../purchase_ncee/purchase_ncee?course_id={{course_id}}">购买</navigator>
 </view>
 
 
