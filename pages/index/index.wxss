@@ -1,32 +1,22 @@
 /**index.wxss**/
 
-/*.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
+.viewName {
+    height: 40px; 
+    font-size: 15px; 
+    background-color: #EED2EE;
 
- /*avator: 化身
-.userinfo-avatar {
-  width: 64rpx;
-  height: 64rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+    display: flex; 
+    align-items: center;
 }
 
-.userinfo-nickname {
-  color: #EA0000;
-}*/
-
-.main_ncee {
-  margin-top: 5px;
-  color: #EA0000;
+.textName {
+    color: 	#EA0000;
+    font-size: 15px;   
 }
 
-.main_toefl {
-  margin-top: 5px;
-  color: #EA0000;
-}
+
+
+
 
 
 

@@ -1,10 +1,8 @@
 <!--purchase_ncee.wxml-->
 
-
 <view class="purchase_ncee_information_view">
   <text>请输入您的个人信息：</text>
 </view>
-
 
 <view id="adduser">  
     <form bindsubmit="formSubmit" > 
@@ -71,12 +69,16 @@
 							<text>课程id：</text>
 							<text>{{course_id}}</text>
 						</view>
+
+                        <view class="user_information">
+							<text>openid：</text>
+							<text>{{open_id}}</text>
+						</view>
 				</view>
 
 				<!-- 提交按钮 -->
         <view class="section btn-area">  
-            <button formType="submit">提交</button>  
-            <!--<button formType="reset">清空</button>  -->
+            <button bindtap="wxpay" formType="submit">提交并付款</button>  
         </view>  
     </form>  
 </view>    

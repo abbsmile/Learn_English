@@ -1,27 +1,23 @@
 <!--index.wxml-->
 
-
 <view class="container">
 
-  <!-- 关于高考这一块 -->
-  <image class="main_image_examination" src="../image/examination/2.png" mode="scaleToFill">
-  </image>
-  <view class="main_ncee">
-    <navigator url="../ncee/ncee?title=高考冲刺">{{ncee_motto}}</navigator>
-  </view>
+    <!-- NCEE -->
+    <image class="main_image_examination" src="../image/examination/2.png" mode="scaleToFill">
+    </image>
+    <view class="viewName">
+        <navigator url="../ncee/ncee">
+            <text class="textName">{{ncee_motto}}</text>
+        </navigator>
+    </view>
 
-
-
-  <!-- 关于托福这一块 -->
-  <image class="main_image_toefl" src="{{imageUrl_toefl}}" mode="scaleToFill">  
-  </image>  
-  <view class="main_toefl">
-        <navigator url="../toefl/toefl?title=托福英语">{{toefl_motto}}</navigator>
-  </view>
-
-  <!--<view  bindtap="bindViewTap" class="userinfo">
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>-->
+    <!-- toeft -->
+    <image class="main_image_toefl" src="{{imageUrl_toefl}}" mode="scaleToFill">  
+    </image> 
+    <view class="viewName">
+        <navigator url="../toefl/toefl">
+            <text class="textName">{{toefl_motto}}</text>
+        </navigator>
+    </view>
 
 </view>

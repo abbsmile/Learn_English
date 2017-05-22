@@ -1,19 +1,59 @@
 /* ncee.wxss */
 
 
-.ncee_introduce {
+/*.ncee_introduce {
   margin-top: 20px;
   color: #6F00D2;
-}
+}*/
 
-.ncee_purchase_introduce {
-  margin-left: 30%;
-  /* 这句没有用，可以查一下什么情况 */
-  margin-top:2000px;
-  color: #EA0000;
-}
-
-.ncee_purchase_view {
+/*.ncee_purchase_view {
 	color: #4B0091;
 	margin-left: 40%;
+}*/
+
+.ncee_title_intrdece_view {
+    background-color: #EED2EE;
+    height: 50px;
+    margin-top: 4px;
+
+    /*margin-left: 40px;
+    margin-right: 40px;*/
+
+    justify-content: center;
+    display: flex; 
+    align-items: center;
+}
+
+.ncee_image_view {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.ncee_cotent_view {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #6F00D2;
+}
+
+.ncee_price_view {
+    background-color: #F9F900;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: 	#FF0000;
+
+    justify-content: center;
+    display: flex; 
+    align-items: center;
+}
+
+.ncee_purchase_question_view {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #FF0000;
+}
+
+.button-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
 }

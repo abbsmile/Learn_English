@@ -1,16 +1,15 @@
 // ncee.js
+
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     name: '',
     ncee_image_introduce: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495007777755&di=7c352686ac1f50e976b3c12996b94900&imgtype=0&src=http%3A%2F%2Fimg.kuaiji.com%2F2016%2F0601%2F1464759405945.jpg",
     description: '',
     price: '',
     teacher_id: '',
-	course_id: ''
+	course_id: '',
   },
 
   /**
@@ -19,7 +18,7 @@ Page({
   onLoad: function (options) {
       var that = this
       wx.request({
-        url: 'https://english.yj777.cn/public/index.php/index/index/course',
+          url: 'http://localhost/report/english/public/index.php/index/index/course',
         header: {
          'content-type': 'application/json'
         },
@@ -40,6 +39,14 @@ Page({
           console.log('submit comlete');
         }
       })
+    },
+
+    purchase_tap: function (options) {
+        var course_id = this.data.course_id
+        // 这里为什么跳转不行？？也是个问题？？？
+        wx.navigateTo({
+            url: "../purchase_ncee/purchase_ncee?course_id="+course_id
+        })
     },
 
   /**
