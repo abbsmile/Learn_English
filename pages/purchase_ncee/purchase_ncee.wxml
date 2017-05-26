@@ -1,182 +1,89 @@
 <!--purchase_ncee.wxml-->
 
-<view id="playing-bg" class="blurbg" style="background-image:url({{background_image}})" >
+<view id="playing-bg" class="myView" style="background-image:url({{background_image}})" >
+
+<view class="top">
+  <label>最顶层字体，为背景服务</label>
+</view>
 
 <view class="purchase_ncee_information_view">
   <label>请输入您的个人信息</label>
 </view>
 
 <form bindsubmit="formSubmit" >
-<!-- input by ourself -->
-<view class="user_get_from_write">
 
-    <view class="row_view" style="display:flex;">
-        <view>姓   名: </view>
-        <input name="username" style="border: 1px solid;border-color: lightblue;" placeholder="请输入姓名" type="text" focus="false"/>
-    </view>
+    <!-- 1、input by ourself -->
+    <view class="user_get_from_write">
+        <view class="row_view" style="display:flex;">
+            <view>姓   名: </view>
+            <input name="username" style="border: 1px solid;border-color: lightblue;" placeholder="请输入姓名" type="text" focus="false"/>
+        </view>
 
-    <view class="row_view" style="display:flex;">
-    <view>号   码: </view>
-    <input name="mobile" style="border: 1px solid;border-color: lightblue;" placeholder="请输入手机号码" type="text" focus="true"/>
-    </view>
+        <view class="row_view" style="display:flex;">
+        <view>号   码: </view>
+        <input name="mobile" style="border: 1px solid;border-color: lightblue;" placeholder="请输入手机号码" type="text" focus="true"/>
+        </view>
 
-    <view class="row_view" style="display:flex;">
-    <view>邮  箱: </view>
-    <input name="email" style="border: 1px solid;border-color: lightblue;" placeholder="请输入邮箱号码" type="text" focus="true"/>
-    </view>
+        <view class="row_view" style="display:flex;">
+        <view>邮  箱: </view>
+        <input name="email" style="border: 1px solid;border-color: lightblue;" placeholder="请输入邮箱号码" type="text" focus="true"/>
+        </view>
 
-    <view class="row_view" style=" display:flex;">
-    <view>证  件:</view>
-    <input name="identity_no" style="border: 1px solid;border-color: lightblue;" placeholder="请输入身份证号码" type="text" focus="true"/>
-    </view>
-
-</view>
-
-<!-- 微信上get：-->
-<view class="user_get_from_wechat">
-    <view class="user_information">
-        <text>呢  称：</text>
-        <text >{{userInfo.nickName}}</text>
-    </view>
-    <view class="user_information">
-        <text>省  份：</text>
-        <text>{{userInfo.province}}</text>
-    </view>
-    <view class="user_information">
-        <text>城  市：</text>
-        <text>{{userInfo.city}}</text>
-    </view>
-    <view class="user_information">
-        <text>国  家：</text>
-        <text>{{userInfo.country}}</text>
-    </view>
-    <view class="user-information-gender" style="display:flex;">
-            <text>性  别：</text>
-            <view wx:if="{{userInfo.gender}}"> 男 </view>
-            <view wx:else> 女 </view>
-    </view>
-    <view class="user_information">
-        <text>课程id：</text>
-        <text>{{course_id}}</text>
+        <view class="row_view" style=" display:flex;">
+        <view>证  件:</view>
+        <input name="identity_no" style="border: 1px solid;border-color: lightblue;" placeholder="请输入身份证号码" type="text" focus="true"/>
+        </view>
     </view>
 
-    <view class="user_information">
-        <text>openid：</text>
-        <text>{{open_id}}</text>
+    <!-- 2、微信上get：-->
+    <view class="user_get_from_wechat">
+        <view class="user_information">
+            <text>呢  称：</text>
+            <text >{{userInfo.nickName}}</text>
+        </view>
+        <view class="user_information">
+            <text>省  份：</text>
+            <text>{{userInfo.province}}</text>
+        </view>
+        <view class="user_information">
+            <text>城  市：</text>
+            <text>{{userInfo.city}}</text>
+        </view>
+        <view class="user_information">
+            <text>国  家：</text>
+            <text>{{userInfo.country}}</text>
+        </view>
+        <view class="user-information-gender" style="display:flex;">
+                <text>性  别：</text>
+                <view wx:if="{{userInfo.gender}}"> 男 </view>
+                <view wx:else> 女 </view>
+        </view>
+
+
+<!-- 课程id和openid本没有必要这样展示出来  -->
+        <!--<view class="user_information">
+            <text>课程id：</text>
+            <text>{{course_id}}</text>
+        </view>
+
+        <view class="user_information">
+            <text>openid：</text>
+            <text>{{open_id}}</text>
+        </view>-->
+
+
+
     </view>
-</view>
 
-<!-- 提交按钮 -->
- <view class="submit_wxpay"> 
-    <button class="button-submit-wxpay" style="opacity: {{opacity}};color: white; background-color: #ff8719;" bindtap="urlToPay" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" formType="submit" >提交信息并付款</button>  
-</view>
+    <!-- 3、提交按钮 -->
+    <view class="submit_wxpay"> 
+        <button class="button-submit-wxpay" style="opacity: {{opacity}};color: white; background-color: #ff8719;" bindtap="urlToPay" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" formType="submit" >提交信息并付款</button>  
+    </view>
 
+<!-- 将整个form表单进行了提交 -->
 </form>
 
 
+ <!--背景图的原因-->
 </view>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<view id="adduser">  
-    <form bindsubmit="formSubmit" >
-
-
-        <view class="section"> 
-
-            <view class="name_input_view">
-            <label>姓  名:</label>
-            <input type="text" name="username" placeholder="请输入姓名" />
-            </view>
-
-            <view class="section__mobile">电话号码:</view>  
-            <input length="11" type="number" class="input-text" name="mobile" placeholder="请输入电话号码" /> 
-
-			<view class="section__email">个人邮箱:</view>  
-            <input type="text" class="input-text" name="email" placeholder="请输入邮箱地址" />  
-
-			<view class="section__identity_no">身份证号:</view>  
-            <input type="text" class="input-text" name="identity_no" placeholder="请输入身份证号码：" />  
-        </view>
-
-				<!-- 我们从微信上获取的数据：-->
-				<!--<view class="user_get_from_wechat">
-						<view class="user_information">
-							<text>呢  称：</text>
-							<text >{{userInfo.nickName}}</text>
-						</view>
-
-						<!--<view class="user_information">
-							<text>avatarUrl:</text>
-							<text>{{userInfo.avatarUrl}}</text>
-						</view>-->
-
-						<!--<view class="user_information">
-							<text>省  份：</text>
-							<text>{{userInfo.province}}</text>
-						</view>
-
-						<view class="user_information">
-							<text>城  市：</text>
-							<text>{{userInfo.city}}</text>
-						</view>
-
-						<view class="user_information">
-							<text>国  家：</text>
-							<text>{{userInfo.country}}</text>
-						</view>
-
-						<view class="user-information-gender">
-								<text>性  别：</text>
-
-								<view wx:if="{{userInfo.gender}}"> 男 </view>
-								<view wx:else> 女 </view>
-						</view>
-
-						<view class="user_information">
-							<text>课程id：</text>
-							<text>{{course_id}}</text>
-						</view>
-
-                        <view class="user_information">
-							<text>openid：</text>
-							<text>{{open_id}}</text>
-						</view>
-				</view>-->
-
-		<!-- 提交按钮 -->
-        <!--<view class="submit_wxpay">  
-            <button bindtap="urlToPay" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" formType="submit">提交信息并付款</button>  
-        </view>-->
-  
-    <!--</form>  
-</view>   -->
-
-
-
 

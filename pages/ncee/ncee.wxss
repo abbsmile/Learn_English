@@ -1,16 +1,5 @@
 /* ncee.wxss */
 
-
-/*.ncee_introduce {
-  margin-top: 20px;
-  color: #6F00D2;
-}*/
-
-/*.ncee_purchase_view {
-	color: #4B0091;
-	margin-left: 40%;
-}*/
-
 /* 标题党 */
 .ncee_title_intrdece_view {
 
@@ -20,20 +9,12 @@
     /*background-color: #EED2EE;*/
     height: 50px;
     margin-top: 4px;
-    
-
-    /*margin-left: 40px;
-    margin-right: 40px;*/
 
     justify-content: center;
     display: flex; 
     align-items: center;
 }
 
-/*.ncee_image_view {
-    margin-left: 40px;
-    margin-right: 40px;
-}*/
 /* 轮播图 */
 .slide-image{  
     width: 90%; 
@@ -69,7 +50,6 @@
     color: #FF0000;
 }
 
-
 /* 高考介绍页面："点击跳转到购买页面"的按钮 */
 .button-purchase-ncee {
     width: 20%;
@@ -79,17 +59,5 @@
     margin-bottom: 20px;
 
     display: flex; 
-    align-items: center;
-    
+    align-items: center;  
 }
-
-
-/* wrapper:包装纸 等于是包装了这个按钮，这个要注意一下的 */
-/* 这个也是引进的 */
-/*.button-wrapper{
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    height: 40px;
-}*/
-

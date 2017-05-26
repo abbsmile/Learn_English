@@ -33,6 +33,10 @@ Page({
     },
 
     onLoad: function (options) {
+        wx.setNavigationBarTitle ({
+            title: '课程详情'
+        })
+
         var that = this
         wx.request({
             url: base.path.res + "/course",

@@ -1,58 +1,61 @@
 /* purchase_ncee.wxss */
 
+/* 最上面一层的样子 */
+.top {
+    margin-top: 0rpx;
+    opacity: 0;
+}
+
+/* 就是那张背景图 */
+.myView {
+    height: 1180rpx;
+}
+
 /* "请输入您的个人信息" */
 .purchase_ncee_information_view {
-    margin-top: 20px;
-    margin-left: 80px;
-    margin-right: 60px;
+    width: 50%;
+    margin-top: 140rpx;
+    margin-left: 240rpx;
 }
+
+.row_view {
+    width: 90%;
+    /*clear: both;  */
+    margin: 0.5rem auto;    
+} 
+
 
 /* 输入的个人信息 */
 .user_get_from_write {
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 100rpx;
+    margin-top: 80rpx;
 }
-/* 微信上获取的个人信息 */
+
+
+/* 微信上获取的个人信息: 指的是姓名、号码、邮箱、证件这个整体 */
 .user_get_from_wechat {
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 140rpx;
+    margin-top: 40rpx;
+    margin-bottom: 20rpx;
 }
+
 
 /* 提交信息并付款 */
 .button-submit-wxpay {
     width: 50%;
     height: 50rpx;
 
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 100rpx;
+    margin-bottom: 40rpx;
 
     display: flex; 
     align-items: center;
 }
 
-.row_view {
-    clear: both;  
-    margin: 0.5rem auto;    
-} 
 
-/*.button-purchase-ncee {
-    width: 20%;
-    height: 50rpx;
 
-    margin-top: 10px;
-    margin-bottom: 20px;
 
-    display: flex; 
-    align-items: center;
-}*/
 
-/*
-#adduser{  
-    background: #f5f5f5;  
-}  */
 
-.blurbg {
-height: 1200rpx;
-}
+
+
