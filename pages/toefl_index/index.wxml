@@ -1,0 +1,67 @@
+<!--index.wxml-->
+
+
+
+<scroll-view scroll-y="true" class="content">
+
+    <!-- 最上面的一张图片 -->
+    <view class="img-poster">
+        <navigator url="../toefl/toefl">
+                    <image mode="scaleToFill" class="actual-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495686083070&di=5242c789c35d8726ef98ad7f6d1c8d8e&imgtype=0&src=http%3A%2F%2Fwx.pxto.com.cn%2Fueditor%2Fasp%2Fupload1%2F20150803%2F14385937488530821.png"></image>
+        </navigator>
+    </view>
+
+    <!-- 高一4张图片 -->
+    <view class="col3">
+         <view class="col3-h">
+            <text>男儿欲遂平生志</text>
+            <icon type="search" size="16" style="float:right"></icon>
+        </view>
+
+        <navigator url="../toefl/toefl">
+        <scroll-view scroll-x="true" class="col3-img-list">
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.699pic.com/photo/2016/08/12/875f9bdf-03fa-4a8c-b5bb-9582759313fa.jpg_wh1200.jpg"></image>
+            </view>
+
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.699pic.com/photo/00003/1059.jpg_wh1200.jpg"></image>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.699pic.com/photo/20001/3321.jpg_wh1200.jpg"></image>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.699pic.com/photo/50038/3264.jpg_wh1200.jpg"></image>
+            </view>
+        </scroll-view>
+        </navigator>
+    </view>
+
+    <!-- 高二4张图片 -->
+    <view class="col3">
+         <view class="col3-h">
+            <text>六经勤向窗前读</text>
+            <icon type="search" size="16" style="float:right"></icon>
+        </view>
+        
+        <navigator url="../toefl/toefl">
+        <scroll-view scroll-x="true" class="col3-img-list">
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.699pic.com/photo/2016/08/26/d95158ac-4e75-4ca8-966f-9ab878641120.jpg_wh1200.jpg"></image>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.699pic.com/photo/2016/08/27/b3470839-8ce2-41b8-8717-0d95ea45f869.jpg_wh1200.jpg"></image>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.699pic.com/photo/40002/8982.jpg_wh1200.jpg"></image>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.699pic.com/photo/2016/08/28/3d46cde1-db1d-4d38-ac73-cbe0358e59bc.jpg_wh1200.jpg"></image>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495685893480&di=8a1004263b02f8cca82b574007909bdb&imgtype=0&src=http%3A%2F%2Fpx.thea.cn%2FPublic%2FUpload%2F2787506%2FIntro%2F1461566040.jpg"></image>
+            </view>
+        </scroll-view>
+        </navigator>
+    </view>
+    </scroll-view>

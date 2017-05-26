@@ -1,28 +1,4 @@
-<!--index.wxml-->
-
-<!--<view class="container">-->
-
-    <!-- NCEE -->
-    <!--<image class="main_image_examination" src="../image/examination/ncee_main.jpg" mode="scaleToFill">
-    </image>
-    <view class="viewName">
-        <navigator url="../ncee/ncee">
-            <text class="textName">{{ncee_motto}}</text>
-        </navigator>
-    </view>-->
-
-    <!-- toeft -->
-    <!--<image class="main_image_toefl" src="{{imageUrl_toefl}}" mode="scaleToFill">  
-    </image> 
-    <view class="viewName">
-        <navigator url="../toefl/toefl">
-            <text class="textName">{{toefl_motto}}</text>
-        </navigator>
-    </view>-->
-<!--
-</view>-->
-
-<!--<view class="menu">
+<view class="menu">
     <scroll-view scroll-x="true" class="top-nav">
         <view bindtap="toHot" class="top-btn {{hot}}">热门</view>
         <view bindtap="toFilm" class="top-btn {{film}}">电影</view>
@@ -33,79 +9,59 @@
         <view bindtap="toOther" class="top-btn {{other}}">其他</view>
         <view bindtap="toOther1" class="top-btn {{other1}}">其他1</view>
     </scroll-view>
-</view>-->
-
-
+</view>
 <scroll-view scroll-y="true" class="content">
-    <!-- 最上面的一张图片 -->
     <view class="img-poster">
-        <navigator url="../ncee/ncee">
-                    <image mode="scaleToFill" class="actual-img" src="http://seopic.699pic.com/photo/50039/1301.jpg_wh1200.jpg"></image>
-        </navigator>
+        <image mode="scaleToFill" class="actual-img" src="https://qnmob.doubanio.com/img/files/file-1475046357.jpg?imageView2/2/q/60/w/600/h/0/format/jpg"></image>
     </view>
-
-    <!-- 高一4张图片 -->
     <view class="col3">
          <view class="col3-h">
-            <text>书卷多情似故人</text>
+            <text>影院热映</text>
             <icon type="search" size="16" style="float:right"></icon>
         </view>
-
-        <navigator url="../ncee/ncee">
         <scroll-view scroll-x="true" class="col3-img-list">
             <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://pic.qiantucdn.com/58pic/13/70/45/89258PIC3rR_1024.jpg!/watermark/url/L3dhdGVybWFyay12MS4zLnBuZw==/align/center"></image>
-            </view>
-
-            <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://seopic.58pic.com/photo/20003/4841.jpg_wh1200.jpg"></image>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2382076389.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
             <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://pic.qiantucdn.com/58pic/15/63/01/45958PICPCy_1024.jpg!/watermark/url/L3dhdGVybWFyay12MS4zLnBuZw==/align/center"></image>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2377470803.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
             <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://img95.58pic.com/photo/20003/4835.jpg_wh860.jpg!wh650"></image>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2380677316.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2380681527.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
         </scroll-view>
-        </navigator>
     </view>
-
-    <!-- 高二4张图片 -->
     <view class="col3">
          <view class="col3-h">
-            <text>晨昏忧乐每相亲</text>
+            <text>免费在线观看新篇</text>
             <icon type="search" size="16" style="float:right"></icon>
         </view>
-        
-        <navigator url="../ncee/ncee">
         <scroll-view scroll-x="true" class="col3-img-list">
             <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://pic.qiantucdn.com/58pic/15/65/41/41p58PIC86y_1024.jpg!/watermark/url/L3dhdGVybWFyay12MS4zLnBuZw==/align/center"></image>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2351313845.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
             <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://pic.qiantucdn.com/58pic/11/19/18/14S58PICWZa.jpg!/watermark/url/L3dhdGVybWFyay12MS4zLnBuZw==/align/center"></image>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2324130130.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
             <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://img95.58pic.com/photo/00018/0798.jpg_wh860.jpg!wh650"></image>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2332944143.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
             <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://img95.58pic.com/photo/00029/1543.jpg_wh860.jpg!wh650"></image>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2367899630.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
             <view class="col3-img">
-                <image class="c3-actual-img" mode="scaleToFill" src="http://img95.58pic.com/photo/20003/4843.jpg_wh860.jpg!wh650"></image>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2346212678.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
         </scroll-view>
-        </navigator>
     </view>
-
-    <!-- 高三4张图片 -->
-    <!--<view class="col3">
+    <view class="col3">
          <view class="col3-h">
-            <text>高三</text>
+            <text>新篇速递</text>
             <icon type="search" size="16" style="float:right"></icon>
         </view>
-
-        <navigator url="../ncee/ncee">
         <scroll-view scroll-x="true" class="col3-img-list">
             <view class="col3-img">
                 <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2355441956.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
@@ -120,11 +76,9 @@
                 <image class="c3-actual-img" mode="scaleToFill" src="https://qnmob.doubanio.com/view/movie_poster_cover/lpst/public/p2322079398.jpg?imageView2/0/q/80/w/9999/h/300/format/jpg"></image>
             </view>
         </scroll-view>
-        </navigator>
-    </view>-->
-
-    <!--<view class="nav">-->
-        <!--<button type="primary" class="tag" size="mini">经典</button>
+    </view>
+    <view class="nav">
+        <button type="primary" class="tag" size="mini">经典</button>
         <button type="primary" class="tag" size="mini">动画</button>
         <button type="primary" class="tag" size="mini">冷门佳片</button>
         <button type="primary" class="tag" size="mini">豆瓣高分</button>
@@ -137,19 +91,6 @@
         <button type="primary" class="tag" size="mini">成长</button>
         <button type="primary" class="tag" size="mini">华语</button>
         <button type="primary" class="tag" size="mini">韩国</button>
-        <button type="primary" class="tag" size="mini">日本</button>-->
-    <!--</view>-->
-
+        <button type="primary" class="tag" size="mini">日本</button>
+    </view>
 </scroll-view>
-
-
-<!--<view class="viewName">
-        <navigator url="../ncee/ncee">
-            <text class="textName">{{ncee_motto}}</text>
-        </navigator>
-    </view>-->
-
-
-
-
-

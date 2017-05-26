@@ -1,9 +1,60 @@
 <!--toefl.wxml-->
 
-<view class="contain_toefl">
+<!--toefl.wxml-->
 
-  <view class="toefl_introduce">
-    <text class="toefl_introduce">{{introduce}}</text>
-  </view>
+<!-- 1、展示一下介绍-->
+<view class="toefl_title_intrdece_view">
+    <text class="toefl_title_introduce">{{name}}</text>
+</view>
 
-</view> 
+ <!--1.1 介绍的图片-->
+<!--<view class="toefl_image_view">
+  <image class="toefl_image_imageView" src="{{course_imgurl}}" mode="scaleToFill">
+  </image>
+</view>-->
+<swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}">  
+        <swiper-item>  
+           <navigator url="{{item.link}}" hover-class="navigator-hover">
+            <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+           </navigator>   
+        </swiper-item>  
+      </block>  
+</swiper>
+
+<!-- 1.2 介绍的内容-->
+<view class="toefl_cotent_view">
+    <text class="toefl_content_text">{{description}}</text>
+</view>
+
+<!-- 1.3 介绍的价格-->
+<view class="toefl_price_view">
+    <text class="toefl_price_key_text">课程价格：</text>
+    <text class="toefl_price_value_text">{{price}}RMB/期</text>
+</view>
+
+<!-- 1.4 教师id-->
+<!--<view class="toefl_teacherid_introduce_view">
+  <span>
+    <text class="toefl_price_introduce">教师的id号： </text>
+    <text class="toefl_teacher_introduce">{{teacher_id}}</text>
+  </span>
+</view>
+
+<!-- 1.5 课程id -->
+<!--<view class="toefl_teacherid_introduce_view">
+  <span>
+    <text class="toefl_price_introduce">课程的id： </text>
+    <text class="toefl_teacher_introduce">{{course_id}}</text>
+  </span>
+</view>-->
+
+<!--2、购买该课程 -->
+<view class="toefl_purchase_view">
+
+    <view class="toefl_purchase_question_view">你想购买该课程么？</view>
+
+    <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="purchase_tap" class="button-purchase-toefl" style="opacity: {{opacity}};color: white; background-color: #ff8719;">购买</button>
+
+</view>

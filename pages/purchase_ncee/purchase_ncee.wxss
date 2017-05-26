@@ -1,7 +1,58 @@
 /* purchase_ncee.wxss */
 
+/* "请输入您的个人信息" */
 .purchase_ncee_information_view {
-  margin-top: 20px
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 60px;
 }
 
+/* 输入的个人信息 */
+.user_get_from_write {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* 微信上获取的个人信息 */
+.user_get_from_wechat {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+/* 提交信息并付款 */
+.button-submit-wxpay {
+    width: 50%;
+    height: 50rpx;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    display: flex; 
+    align-items: center;
+}
+
+.row_view {
+    clear: both;  
+    margin: 0.5rem auto;    
+} 
+
+/*.button-purchase-ncee {
+    width: 20%;
+    height: 50rpx;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    display: flex; 
+    align-items: center;
+}*/
+
+/*
+#adduser{  
+    background: #f5f5f5;  
+}  */
+
+.blurbg {
+height: 1200rpx;
+}

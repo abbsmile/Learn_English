@@ -1,36 +1,35 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "Setting/register/register",
-    "pages/ncee/ncee",
-    "pages/toefl/toefl",
-    "pages/purchase_ncee/purchase_ncee"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#FFFF00",
-    "navigationBarTitleText": "上海甬洁科技",
-    "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "pagePath": "Setting/register/register",
-        "text": "设置"
-      }
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/ncee/ncee",
+        "pages/toefl/toefl",
+        "pages/purchase_ncee/purchase_ncee",
+        "pages/toefl_index/index"
     ],
-    "backgroundColor": "#E0E0E0",
-    "selectedColor": "#EA0000",
-    "borderStyle": "white"
-  },
-  "debug": true,
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
-  }
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FFFF00",
+        "navigationBarTitleText": "英语站",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "高考",
+                "iconPath": "icon/ncee_normal.png",
+                "selectedIconPath": "icon/ncee_selected.png"
+            },
+            {
+                "pagePath": "pages/toefl_index/index",
+                "text": "托福",
+                "iconPath": "icon/toefl_normal.png",
+                "selectedIconPath": "icon/toefl_selected.png"
+            }
+        ],
+        "backgroundColor": "#f3f3f3",
+        "color": "#99",
+        "selectedColor": "#576b95"
+    }
 }

@@ -1,22 +1,5 @@
-/**index.wxss**/
+/* index.wxss */
 
-/*.viewName {
-    height: 40px; 
-    font-size: 15px; 
-    background-color: #EED2EE;
-
-    display: flex; 
-    align-items: center;
-} */
-
-/*.textName {
-    color: 	#EA0000;
-    font-size: 15px;   
-}*/
-
-
-
-/* 下面是豆瓣上面的布局 */
 .menu{
   position: fixed;
   top: 0px;
@@ -26,21 +9,6 @@
   z-index: 100000
 }
 
-/*.top-nav{
-    white-space: nowrap;
-    width: 95%;
-    margin: 0 auto;
-}*/
-
-/*.top-btn{
-    display: inline-block;
-    padding: 22rpx;
-}*/
-
-/*.top-hoverd-btn{
-    color: #42bd56;
-    border-bottom: #42bd56 solid 1px;
-}*/
 
 .content{
     display: flex;
@@ -98,9 +66,3 @@
 .tag{
     margin: 3px 5px;
 }
-
-
-
-
-
-
